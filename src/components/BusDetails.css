@@ -1,0 +1,120 @@
+/* BusDetails Form Styles - aligned with global styles.css */
+
+.busdetails-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+.busdetails-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.busdetails-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: white;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #555;
+  background-color: #222;
+}
+
+.busdetails-button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.busdetails-create-button,
+.busdetails-cancel-button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.busdetails-create-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.busdetails-create-button:hover {
+  background-color: #218838;
+}
+
+.busdetails-cancel-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.busdetails-cancel-button:hover {
+  background-color: #c82333;
+}
+
+.busdetails-info {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.busdetails-error {
+  color: #ff4d4f;
+  font-size: 0.9rem;
+}
+
+.busdetails-selected-hostels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 0.5rem;
+}
+
+.hostel-chip {
+  background-color: #333;
+  padding: 6px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.busdetails-hostel-chip button {
+  margin-left: 6px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.busdetails-hint {
+  color: #999;
+  font-size: 0.9rem;
+}

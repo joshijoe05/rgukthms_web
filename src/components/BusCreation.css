@@ -1,0 +1,212 @@
+/* Create Button (Top Right Corner) */
+.buscreation-create-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: yellow; /* Yellow background */
+  color: black;
+  width: 100px; /* Reduced width */
+  padding: 8px 12px; /* Adjusted padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px; /* Slightly smaller text */
+}
+
+/* Hover Effect for Create Button */
+.buscreation-create-button:hover {
+  background-color: orange; /* Darker orange on hover */
+}
+
+.buscreation-header h2 {
+  font-size: 28px;
+  color: white; /* Dark text for heading */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Status Active/Inactive */
+.status-active {
+  color: green;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.status-inactive {
+  color: red;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Loader Container */
+.buscreation-loader-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* Circle Loader (White color) */
+.buscreation-loader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid white;  /* Change to white */
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spin Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Bus Table Container */
+.buscreation-container {
+  position: relative;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  color: white;
+}
+
+/* Bus Table */
+.buscreation-styled-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.buscreation-styled-table th {
+  background-color: #333;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid yellow;
+}
+
+.buscreation-styled-table th.spaced {
+  padding-left: 20px;
+}
+
+.buscreation-styled-table td {
+  padding: 12px;
+  border-bottom: 1px solid #444;
+}
+
+.buscreation-styled-table tr:hover {
+  background-color: #444;
+}
+
+/* Bus Pagination */
+.buscreation-pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Circular Page Buttons */
+.buscreation-page-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white; /* Set border to white */
+  background-color: transparent; /* Transparent background */
+  color: white;  /* Set text color to white */
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover Effect */
+.buscreation-page-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Light transparent white on hover */
+  transform: scale(1.1);
+}
+
+/* Active Page Styling */
+.buscreation-page-btn.active {
+  background-color: white; /* Active button with white background */
+  color: black;  /* Text color changes to black when active */
+  border: none;  /* No border on active page */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Hostel Select Dropdown Consistency */
+.buscreation-hostel-select-container {
+  float: right;
+  margin-bottom: 10px;
+}
+
+#buscreation-hostel-select {
+  width: 150px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+/* Action Button Styling */
+.buscreation-arrow-button {
+  background-color: transparent;
+  border: 2px solid white; /* Default border color */
+  border-radius: 50%; /* Make the button circular */
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  transition: 
+    background-color 0.3s ease, 
+    transform 0.2s ease, 
+    border-color 0.3s ease, 
+    box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;  /* Size of the button */
+  height: 40px; /* Size of the button */
+}
+
+/* Action Button Hover Effect */
+.buscreation-arrow-button:hover {
+  background-color: yellow;  /* Hover background color */
+  transform: scale(1.2); /* Slight zoom effect */
+  border-color: yellow; /* Change border color on hover */
+  box-shadow: 0px 4px 15px rgba(255, 255, 0, 0.6); /* Glowing effect on hover */
+}
+
+/* Action Button Active (Green) */
+.buscreation-arrow-button.active {
+  background-color: green; /* Green color for active */
+  border-color: green;
+  transform: scale(1.2); /* Slight zoom effect */
+  box-shadow: 0px 4px 15px rgba(0, 255, 0, 0.6); /* Glowing effect for active */
+}
+
+/* Action Button Inactive (Red) */
+.buscreation-arrow-button.inactive {
+  background-color: red; /* Red color for inactive */
+  border-color: red;
+  transform: scale(1.2); /* Slight zoom effect */
+  box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.6); /* Glowing effect for inactive */
+}
+
+/* Action Button Active (when clicked) */
+.buscreation-arrow-button:active {
+  transform: scale(0.95); /* Button slightly shrinks on click */
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.9); /* Enhanced glow on click */
+}
+
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .buscreation-styled-table th,
+  .buscreation-styled-table td {
+      padding: 10px;
+      font-size: 14px;
+  }
+}

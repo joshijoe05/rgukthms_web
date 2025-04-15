@@ -1,0 +1,68 @@
+/* Bus Analytics Container */
+.bus-analytics-container {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  background: #f0f0f0; /* Light gray background for the container */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.bus-analytics-container h2 {
+  font-size: 28px;
+  color: #333; /* Dark text for heading */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.bus-analytics-container p {
+  font-size: 16px;
+  color: #666; /* Lighter gray for text */
+  margin-bottom: 20px;
+}
+
+/* Charts Container */
+.charts-container {
+  display: flex;
+  justify-content: space-between; /* Ensures spacing is more even */
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.chart-box {
+  width: 45%; /* Increased width to ensure charts have more space */
+  background: #f9f9f9; /* Light background for chart box */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow for focus */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+.chart-box:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deep shadow on hover */
+}
+
+/* Back Button Styling */
+.back-button {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  background: #0056b3; /* Blue background for the button */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+  background: #004080; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly larger button effect */
+}
+
+.back-button:focus {
+  outline: none; /* Remove default outline when clicked */
+}

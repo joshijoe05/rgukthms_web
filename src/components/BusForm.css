@@ -1,0 +1,187 @@
+/* BusForm Clean UI Styles - Inspired by BusDetails */
+
+.busform-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  color: #e5e5e5;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.busform-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.busform-title {
+  text-align: center;
+  margin-bottom: 1.8rem;
+  color: #f9f9f9;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.busform-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.busform-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+input,
+select {
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #ffcb05;
+  background-color: #333;
+}
+
+input::placeholder,
+select::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.busform-multiselect-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  background-color: #222;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  margin-bottom: 1.5rem;
+}
+
+.busform-checkbox-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #333;
+  border-radius: 25px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.busform-checkbox-item:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+.busform-checkbox-item input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #ffcb05;
+  cursor: pointer;
+}
+
+.busform-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+
+.busform-submit-button,
+.busform-cancel-button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 500;
+}
+
+.busform-submit-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.busform-submit-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.busform-cancel-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.busform-cancel-button:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+.busform-info {
+  color: #aaa;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.busform-error {
+  color: #ff4d4f;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+/* Increased margin between fields and buttons */
+.busform-form > .busform-group:last-child {
+  margin-bottom: 2rem; /* Added extra space before buttons */
+}
+
+@media (max-width: 768px) {
+  .busform-container {
+    padding: 1.5rem;
+  }
+
+  .busform-title {
+    font-size: 1.4rem;
+  }
+
+  .busform-actions {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .busform-submit-button,
+  .busform-cancel-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .busform-multiselect-container {
+    flex-direction: column;
+  }
+
+  .busform-checkbox-item {
+    width: 100%;
+  }
+}

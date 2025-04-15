@@ -1,0 +1,183 @@
+/* Complaints Page - Enhanced Dark Theme */
+
+/* Main Container */
+.complaint-details {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px 35px;
+  background: #1f1f1f;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  transition: all 0.3s ease;
+}
+
+.complaint-details:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+/* Headings */
+.complaint-details h2,
+.complaint-details h3 {
+  color: white;
+  margin-bottom: 8px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid yellow;
+  padding-bottom: 5px;
+}
+
+/* Description Text */
+.complaint-detailsp {
+  font-size: 16px;
+  color: #d0d0d0;
+  line-height: 1.7;
+}
+
+/* Comments Section */
+.comment-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid yellow;
+}
+
+.comments-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment-item {
+  background: #292929;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #cccccc;
+  border-left: 5px solid yellow;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.comment-item:hover {
+  background: #333333;
+  transform: translateX(6px);
+}
+
+/* Comment Input */
+textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 14px 16px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  font-size: 15px;
+  resize: vertical;
+  background: #2a2a2a;
+  color: white;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+  border-color: yellow;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.3);
+  outline: none;
+}
+
+/* Submit Button */
+.complaint-details button {
+  background: linear-gradient(90deg, yellow, gold);
+  color: black;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.complaint-details button:hover {
+  background: linear-gradient(90deg, gold, orange);
+  box-shadow: 0 6px 20px rgba(255, 165, 0, 0.6);
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4c4c;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Complaint Images Section */
+.complaint-images {
+  margin-top: 15px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.complaint-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid yellow;
+  padding: 5px;
+  background: #222;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.complaint-image:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* Back to Issues Button - Compact Style */
+.back-button {
+  background: linear-gradient(90deg, yellow, gold);
+  color: black;
+  border: none;
+  padding: 6px 12px;   /* Reduced padding for smaller size */
+  font-size: 13px;     /* Slightly smaller text */
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: fit-content;  /* Makes the button hug the text */
+  box-shadow: 0 3px 8px rgba(255, 215, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: linear-gradient(90deg, gold, orange);
+  box-shadow: 0 5px 15px rgba(255, 165, 0, 0.5);
+}
+
+/* Loader Style */
+.complaint-loader {
+  border: 6px solid #f3f3f3; /* Light gray */
+  border-top: 6px solid yellow; /* Yellow color for animation */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.5s linear infinite;
+  margin: 50px auto; /* Center the loader */
+}
+
+/* Animation for spinning effect */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

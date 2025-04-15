@@ -1,0 +1,152 @@
+/* Loading Spinner */
+.loading-spinner {
+    border: 4px solid transparent;
+    border-top: 4px solid white; /* Set spinner color to white */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  /* Spinner Animation */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+.bookingdetails-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table Header Styling */
+.bookingdetails-table th {
+    
+    color: white; /* White text color for headings */
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid yellow; /* Yellow bottom border for the header */
+}
+
+/* Table Cell Styling */
+.bookingdetails-table td {
+    padding: 10px;
+    border-bottom: 1px solid #444; /* Gray border for cells */
+}
+
+.bookingdetails-table tr:hover {
+    background-color: #444; /* Same as hostel table row hover */
+}
+
+.bookingdetails-status.paid {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.bookingdetails-status.pending {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Heading Styling */
+.bookingdetails-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: white; /* White color for the heading */
+    margin-bottom: 20px;
+}
+
+/* Close Button Styling */
+.bookingdetails-close-button {
+    background: #ff6f00; /* Change to orange */
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto; /* Centering the button */
+}
+
+
+.bookingdetails-close-button:hover {
+    background: #e65c00; /* Darker orange on hover */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6); /* Glow effect */
+}
+/* Pagination Styling */
+.booking-pagination {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Circular Page Buttons */
+  .booking-page-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white; /* White border for pagination circles */
+    background-color: transparent; /* Transparent background */
+    color: white; /* White text color */
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Hover Effect */
+  .booking-page-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light transparent white on hover */
+    transform: scale(1.1);
+  }
+  
+  /* Active Page Styling */
+  .booking-page-btn.active {
+    background-color: white; /* Active button with white background */
+    color: black; /* Black text color when active */
+    border: none; /* No border on active page */
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+
+/* Loader Styling */
+.booking-loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust height as needed */
+}
+
+.booking-loader {
+    border: 8px solid #f3f3f3; /* Light grey border */
+    border-top: 8px solid yellow; /* Yellow color for the top border */
+    border-radius: 50%;
+    width: 50px; /* Adjust size */
+    height: 50px; /* Adjust size */
+    animation: spin 1s linear infinite; /* Spin animation */
+}
+.bookingdetails-error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+  }
+
+/* Keyframes for loader spin effect */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

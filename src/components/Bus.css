@@ -1,0 +1,171 @@
+.buss-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #222; /* Same as hostel background color */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    position: relative; /* Set relative positioning */
+}
+
+/* Add Buss Button (Top Right Corner) */
+.buss-create-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: yellow; /* Same as hostel button background */
+    color: black;
+    width: 100px; /* Adjusted width */
+    padding: 8px 12px; /* Adjusted padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px; /* Slightly smaller text */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.buss-create-button:hover {
+    background-color: orange; /* Same as hostel button hover */
+}
+
+/* Buss Table Styling */
+.buss-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.buss-table th {
+    background-color: #333; /* Same as hostel table header background */
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid yellow; /* Same as hostel table header border */
+}
+
+.buss-table th.spaced {
+    padding-left: 20px;
+}
+
+.buss-table td {
+    padding: 12px;
+    border-bottom: 1px solid #444; /* Same as hostel table cell border */
+}
+
+.buss-table tr:hover {
+    background-color: #444; /* Same as hostel table row hover */
+}
+
+/* Pagination Styling */
+.buss-pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Circular Page Buttons */
+.buss-page-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white; /* Set border to white */
+    background-color: transparent; /* Transparent background */
+    color: white;  /* Set text color to white */
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover Effect */
+.buss-page-circle:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light transparent white on hover */
+    transform: scale(1.1);
+}
+
+/* Active Page Styling */
+.buss-page-circle.active {
+    background-color: white; /* Active button with white background */
+    color: black;  /* Text color changes to black when active */
+    border: none;  /* No border on active page */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Loader Styling */
+.buss-loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust height as needed */
+}
+
+.buss-loader {
+    border: 8px solid #f3f3f3; /* Light grey border */
+    border-top: 8px solid yellow; /* Yellow color for the top border */
+    border-radius: 50%;
+    width: 50px; /* Adjust size */
+    height: 50px; /* Adjust size */
+    animation: spin 1s linear infinite; /* Spin animation */
+}
+
+/* Keyframes for loader spin effect */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Action Button Styling */
+.buss-arrow-button {
+    background-color: transparent;
+    border: 2px solid white; /* Default border color */
+    border-radius: 50%; /* Make the button circular */
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    transition: 
+        background-color 0.3s ease, 
+        transform 0.2s ease, 
+        border-color 0.3s ease, 
+        box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;  /* Size of the button */
+    height: 40px; /* Size of the button */
+}
+
+/* Action Button Hover Effect */
+.buss-arrow-button:hover {
+    background-color: yellow;  /* Hover background color */
+    transform: scale(1.2); /* Slight zoom effect */
+    border-color: yellow; /* Change border color on hover */
+    box-shadow: 0px 4px 15px rgba(255, 255, 0, 0.6); /* Glowing effect on hover */
+}
+
+/* Action Button Active (Green) */
+.buss-arrow-button.active {
+    background-color: green; /* Green color for active */
+    border-color: green;
+    transform: scale(1.2); /* Slight zoom effect */
+    box-shadow: 0px 4px 15px rgba(0, 255, 0, 0.6); /* Glowing effect for active */
+}
+
+/* Action Button Inactive (Red) */
+.buss-arrow-button.inactive {
+    background-color: red; /* Red color for inactive */
+    border-color: red;
+    transform: scale(1.2); /* Slight zoom effect */
+    box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.6); /* Glowing effect for inactive */
+}
+
+/* Action Button Active (when clicked) */
+.buss-arrow-button:active {
+    transform: scale(0.95); /* Button slightly shrinks on click */
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.9); /* Enhanced glow on click */
+}

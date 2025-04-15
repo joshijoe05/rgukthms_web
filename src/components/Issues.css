@@ -1,0 +1,121 @@
+/* Loader Container */
+.issues-loader-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* Circle Loader (White color) */
+.issues-loader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid white;  /* Change to white */
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spin Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* Issues Table Container */
+.issues-container {
+  position: relative;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  color: white;
+}
+
+/* Issues Table */
+.issues-styled-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.issues-styled-table th {
+  background-color: #333;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid yellow;
+}
+
+.issues-styled-table th.spaced {
+  padding-left: 20px;
+}
+
+.issues-styled-table td {
+  padding: 12px;
+  border-bottom: 1px solid #444;
+}
+
+.issues-styled-table tr:hover {
+  background-color: #444;
+}
+
+/* Issues Pagination */
+.issues-pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+/* Circular Page Buttons */
+.issues-page-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white; /* Set border to white */
+  background-color: transparent; /* Transparent background */
+  color: white;  /* Set text color to white */
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover Effect */
+.issues-page-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Light transparent white on hover */
+  transform: scale(1.1);
+}
+
+/* Active Page Styling */
+.issues-page-btn.active {
+  background-color: white; /* Active button with white background */
+  color: black;  /* Text color changes to black when active */
+  border: none;  /* No border on active page */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+
+/* Hostel Select Dropdown Consistency */
+.hostel-select-container {
+  float: right;
+  margin-bottom: 10px;
+}
+
+#hostel-select {
+  width: 150px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .issues-styled-table th,
+  .issues-styled-table td {
+      padding: 10px;
+      font-size: 14px;
+  }
+}

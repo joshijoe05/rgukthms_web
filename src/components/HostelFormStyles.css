@@ -1,0 +1,131 @@
+/* Hostel Form Container */
+.hostel-form-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #252525; /* Slightly lighter than the sidebar */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* Subtle glow effect */
+    color: #fff; 
+    border: 1px solid #333; /* Soft border */
+  }
+  
+  /* Form Headings */
+  .hostel-form h2 {
+    text-align: center;
+    color: #ffcc00; 
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Labels */
+  .hostel-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #ddd; /* Light gray for contrast */
+    font-size: 16px;
+  }
+  
+  /* Input Fields */
+  .hostel-form input,
+  .hostel-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #555; /* Soft border for visibility */
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #1a1a1a; /* Dark but distinguishable */
+    color: white;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  /* Focus Effect */
+  .hostel-form input:focus,
+  .hostel-form textarea:focus {
+    border-color: #ffcc00; /* Yellow highlight on focus */
+  }
+  
+  /* Textarea */
+  .hostel-form textarea {
+    height: 80px;
+    resize: none;
+  }
+  /* Button Container */
+.hostel-button-group {
+    display: flex;
+    justify-content: center; /* Center align buttons */
+    gap: 15px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+/* Create & Cancel Buttons */
+.hostel-create-button,
+.hostel-cancel-button {
+    width: 120px; 
+    padding: 10px;
+    background-color: #28a745; /* Blue for create */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+/* Hover Effects */
+.hostel-create-button:hover {
+    background-color: #28a745;
+    color: white;
+    transform: scale(1.05);
+}
+
+.hostel-cancel-button {
+    background-color: #d9534f; /* Red for cancel */
+}
+
+.hostel-cancel-button:hover {
+    background-color: #c9302c;
+    transform: scale(1.05);
+}
+
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .hostel-form-container {
+      max-width: 100%;
+      padding: 20px;
+    }
+  }
+  /* Loader Container */
+.hostel-loader-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Circular Loader */
+.hostel-loader {
+  border: 4px solid #f3f3f3; /* Light gray */
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 1s linear infinite;
+}
+
+/* Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+  
