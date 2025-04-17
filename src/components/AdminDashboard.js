@@ -7,11 +7,14 @@ import Issues from "./Issues";
 import Profile from "./Profile";
 import BusCreation from "./BusCreation";
 import { jwtDecode } from "jwt-decode";
+import { useLocation } from "react-router-dom";
+
 
 import "./styles.css";
 import Bus from "./Bus";
 
 const AdminDashboard = () => {
+  const location = useLocation();
   const [showForm, setShowForm] = useState(false);
   const [role, setRole] = useState(null);
   const [selectedOption, setSelectedOption] = useState("");
@@ -29,12 +32,26 @@ const AdminDashboard = () => {
     }
   }, []);
   useEffect(() => {
-    if (role === "admin") {
+    if (location.state?.from === 'issues') {
+      setSelectedOption("issues");
+      console.log("from issues", location.state.from);
+      window.history.replaceState({}, document.title);
+    }
+    else if (role === "admin") {
       setSelectedOption("hostels");
     } else {
       setSelectedOption("issues");
     }
-  }, [role]);
+  }, [role, location.state]);
+
+  useEffect(() => {
+    console.log(location.state);
+    if (location.state?.from === 'issues') {
+      setSelectedOption("issues");
+      console.log("from issues", location.state.from);
+      window.history.replaceState({}, document.title);
+    }
+  }, [location.state]);
 
   return (
     <div className="container">

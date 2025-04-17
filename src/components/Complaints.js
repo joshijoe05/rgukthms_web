@@ -15,7 +15,7 @@ const Complaints = () => {
       try {
         const response = await api.get(`/complaints/${id}`);
         console.log(response.data);
-        
+
         setComplaint(response.data.data);
       } catch (err) {
         setError("Failed to fetch complaint details.");
@@ -44,7 +44,7 @@ const Complaints = () => {
       <p><strong>Hostel:</strong> {complaint.hostel}</p>
       <p><strong>Priority:</strong> {complaint.priority.toUpperCase()}</p>
       <p><strong>Status:</strong> {complaint.status.toUpperCase()}</p>
-  
+
       {/* Conditionally render images if the list is not empty */}
       {complaint.images && complaint.images.length > 0 && (
         <div className="complaint-images">
@@ -56,8 +56,11 @@ const Complaints = () => {
           </div>
         </div>
       )}
-  
-      <button className="back-button" onClick={() => navigate('/complaints')}>
+
+      <button
+        className="back-button"
+        onClick={() => navigate('/admindashboard', { state: { from: 'issues' } })}
+      >
         Back to Issues
       </button>
     </div>
